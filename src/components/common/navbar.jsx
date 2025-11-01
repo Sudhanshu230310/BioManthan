@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu as MenuIcon, X, ChevronDown } from "lucide-react";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { Button } from "./hero";
+import { Button } from "../Home/heroHome";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ export function Navbar() {
                 <div className="py-1">
                   <MenuItem>
                     <a
-                      href="#"
+                      href="/iitrpr"
                       className="block px-4 py-2 text-slate-700 hover:text-blue-600 transition-all hover:scale-105 rounded-md"
                     >
                       IIT Ropar
@@ -48,7 +48,7 @@ export function Navbar() {
                   </MenuItem>
                   <MenuItem>
                     <a
-                      href="#"
+                      href="/me&bme"
                       className="block px-4 py-2 text-slate-700 hover:text-blue-600 transition-all hover:scale-105 rounded-md"
                     >
                       ME & BME
@@ -200,14 +200,56 @@ export function Navbar() {
           >
             Home
           </a>
-          <a
-            
-            href={`#`}
-            className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-blue-600 hover:scale-105 rounded-2xl"
-            onClick={() => setIsOpen(false)}
-          >
-            About
-          </a>
+          <Menu as="div" className="relative inline-block text-left">
+              <MenuButton className="inline-flex items-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-slate-700 hover:text-blue-600 transition-all hover:scale-105 ">
+                About
+                <ChevronDown className="h-4 w-4" aria-hidden="true" />
+              </MenuButton>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 transition 
+                data-closed:scale-95 data-closed:opacity-0 
+                data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in "
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="/iitrpr"
+                      className="block px-4 py-2 text-slate-700 hover:text-blue-600 transition-all hover:scale-105 rounded-md"
+                    >
+                      IIT Ropar
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-slate-700 hover:text-blue-600 transition-all hover:scale-105 rounded-md"
+                    >
+                      ME & BME
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-slate-700 hover:text-blue-600 transition-all hover:scale-105 rounded-md"
+                    >
+                      SBAOI
+                    </a>
+                  </MenuItem>
+                  <form action="#" method="POST">
+                    <MenuItem>
+                      <button
+                        type="submit"
+                        className="block px-4 py-2 text-slate-700 hover:text-blue-600 transition-all hover:scale-105 rounded-md"
+                      >
+                        STERMI
+                      </button>
+                    </MenuItem>
+                  </form>
+                </div>
+              </MenuItems>
+            </Menu>
           <a
             
             href={`#`}

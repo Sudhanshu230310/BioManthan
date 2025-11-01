@@ -1,6 +1,8 @@
-import { EventGrid } from "./collageImages";
-import { Hero } from "./hero";
+import { EventGrid } from "./collageImagesHome";
+import { Hero } from "./heroHome";
+
 import HomeSpeakers from "./homePageSpeakers";
+import ImportantUp from "./importantHome";
 
 export default function HomePage() {
   return (
@@ -9,7 +11,7 @@ export default function HomePage() {
       <div className="">
         <HomeSpeakers />
       </div>
-      <div className="min-h-screen ">
+      <div className="min-h-screen">
         <div className="flex flex-col bg-gradient-to-br from-white to-blue-200 pt-20 pb-20 lg:flex-row min-h-screen">
           <div className="w-full lg:w-1/2 bg-card">
             <EventGrid />
@@ -47,6 +49,9 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="bg-gradient-to-br py-10 from-white to-blue-200">
+          <ImportantUp />
         </div>
       </div>
     </>

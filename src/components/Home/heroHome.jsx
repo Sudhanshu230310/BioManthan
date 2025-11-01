@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import IIT from "../images/IIT.png";
+import IIT from "../../images/IIT.png";
 
 export function Button({
   variant = "default",
