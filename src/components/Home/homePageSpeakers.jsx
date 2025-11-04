@@ -31,7 +31,7 @@ export default function HomeSpeakers() {
     if (!isAutoScrolling || !scrollContainerRef.current) return;
     const scrollContainer = scrollContainerRef.current;
     let scrollAmount = 0;
-    const scrollSpeed = 0.4;
+    const scrollSpeed = 1;
     const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
 
     const autoScroll = () => {
@@ -51,7 +51,7 @@ export default function HomeSpeakers() {
         {/* ---------------- Speakers Section ---------------- */}
         <section className="text-center space-y-8">
           <div>
-            <h2 className="text-4xl sm:text-5xl font-semibold text-slate-900"><span className="text-red-500">Pro</span>minent Speakers</h2>
+            <h2 className="text-4xl sm:text-5xl font-serif text-slate-900"><span className="text-red-500">Pro</span>minent Speakers</h2>
           </div>
 
           {/* Carousel */}
@@ -90,7 +90,7 @@ export default function HomeSpeakers() {
           <div className="flex flex-col items-center gap-3">
             <div className="flex gap-2">
               {/* <Megaphone className="h-10 w-10 text-blue-600" /> */}
-              <h2 className="text-4xl font-semibold text-slate-900 "><span className="text-red-500">Pub</span>lications</h2>
+              <h2 className="text-4xl font-serif text-slate-900 "><span className="text-red-500">Pub</span>lications</h2>
             </div>
             
             <p className="max-w-2xl mx-auto text-lg text-slate-600">

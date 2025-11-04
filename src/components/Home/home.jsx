@@ -19,8 +19,8 @@ export default function HomePage() {
           <div className="w-full lg:w-1/2 flex justify-center py-2 px-8 lg:px-16">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-                  <span className="text-blue-600"> Bio</span>MANTHAN 2025
+                <h1 className="text-4xl lg:text-5xl font-serif text-foreground leading-tight">
+                  <span className="text-red-600"> Bio</span>MANTHAN 2025
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   BioMANTHAN 2025 — the 40th International Conference on
@@ -40,12 +40,6 @@ export default function HomePage() {
                   scientists, clinicians, and industry leaders shaping the
                   future of healthcare.
                 </p>
-              </div>
-
-              <div className="space-y-4">
-                <button className="bg-blue-600 cursor-pointer text-white px-6 py-2 rounded-2xl hover:scale-105 transition-all duration-100 text-lg">
-                  Get Started
-                </button>
               </div>
             </div>
           </div>

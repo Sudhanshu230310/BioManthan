@@ -51,7 +51,7 @@ export function Hero() {
           {/* Left Content */}
           <div className="space-y-6 text-white">
             <div className="space-y-4">
-              <h2 className="text-sm font-semibold text-orange-400 uppercase tracking-wider">
+              <h2 className="text-xl font-mono uppercase tracking-wider">
                 40th International Conference
               </h2>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight text-balance">
@@ -64,7 +64,7 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row  gap-4 pt-4">
+            {/* <div className="flex flex-col sm:flex-row  gap-4 pt-4">
               <Button size="lg" className="gap-2">
                 Register Now <ArrowRight size={20} />
               </Button>
@@ -75,7 +75,7 @@ export function Hero() {
               >
                 Register
               </Button>
-            </div>
+            </div> */}
 
             {/* Event Details */}
             <div className="grid grid-cols-2 gap-4 pt-8 border-t border-white/20">

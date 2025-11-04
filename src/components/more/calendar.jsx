@@ -148,7 +148,7 @@ export function EventCalendar() {
 
   return (
     <div className="bg-gray-100" style={{ display: "flex", flexDirection: "column", gap: "48px", padding: "48px 100px" }}>
-      <div className="text-5xl font-serif"><span className="text-blue-600">E</span>vents</div>
+      <div className="text-5xl flex justify-center font-serif"><span className="text-red-600">S</span>chedule</div>
       <div 
         className="bg-gradient-to-br from-white to-blue-300"
         style={{

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion"
-import { ChevronDown, ExternalLink } from "lucide-react"
+import meclogo from "../../logos/meclogo.png"
+import bmelogo from "../../logos/bme.png"
+import {ExternalLink } from "lucide-react"
 
 export default function MEBME() {
   const containerVariants = {
@@ -25,10 +27,10 @@ export default function MEBME() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white to-blue-200 bg-background overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-white to-red-200 bg-background overflow-hidden">
 
       {/* Departments Section */}
-      <section className="relative py-24 px-6 max-w-7xl mx-auto">
+      <section className="relative pt-16 pb-24 px-6 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -36,7 +38,7 @@ export default function MEBME() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h3 className="text-5xl font-bold text-foreground mb-4"><span className="text-blue-600">Our</span> Departments</h3>
+          <h3 className="text-5xl font-serif text-foreground mb-4"><span className="text-red-600">Our</span> Departments</h3>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -45,7 +47,7 @@ export default function MEBME() {
             id="mechanical"
             title="Mechanical Engineering"
             subtitle="Satish Dhawan Block"
-            logo="/mechanical-engineering-gear-logo.jpg"
+            logo={meclogo}
             description="The Department of Mechanical Engineering is one of the founding departments of the Institute. It is also one of the largest departments, housing 25 faculty members with varied expertise and hundreds of undergraduate, postgraduate, and research scholars."
             highlights={[
               "B. Tech. in Mechanical with multiple minors",
@@ -69,7 +71,7 @@ export default function MEBME() {
             id="biomedical"
             title="Biomedical Engineering"
             subtitle="Dr. Hargobind Khorana Block"
-            logo="/biomedical-engineering-dna-helix.jpg"
+            logo={bmelogo}
             description="The Department of Biomedical Engineering (DBME) was established in February 2021, superseding the Center for Biomedical Engineering (CBME) program. The department meets healthcare challenges through interdisciplinary research spanning engineering, medical sciences, and natural sciences."
             highlights={[
               "MTech and PhD programs in Biomedical Engineering",
@@ -109,16 +111,16 @@ function DepartmentCard({ id, title, subtitle, logo, description, highlights, ar
       className="group"
     >
       <div
-        className={`bg-gray-200 border border-${colorClass}-200/20 rounded-2xl p-8 md:p-10 backdrop-blur-sm hover:border-${colorClass}-300/40 transition-all duration-300`}
+        className={`bg-gray-100 border border-${colorClass}-200/20 rounded-2xl p-8 md:p-10 backdrop-blur-sm hover:border-${colorClass}-300/40 transition-all duration-300`}
       >
         {/* Logo and Title */}
         <div className="flex items-start gap-6 mb-6">
           <motion.div
-            whileHover={{ rotate: 360 }}
+            
             transition={{ duration: 0.6 }}
             className={`w-24 h-24 rounded-xl bg-gradient-to-br from-${colorClass}-100 to-${colorClass}-50 flex items-center justify-center flex-shrink-0`}
           >
-            <img src={logo || "/placeholder.svg"} alt={title} className="w-16 h-16" />
+            <img src={logo || "/placeholder.svg"} alt={title} className="w-24 -translate-y-4 h-24" />
           </motion.div>
           <div>
             <h4 className="text-2xl md:text-3xl font-bold text-foreground mb-1">{title}</h4>

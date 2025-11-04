@@ -3,9 +3,13 @@ import "./App.css";
 import { Footer } from "./components/common/footer";
 import HomePage from "./components/Home/home";
 import { Navbar } from "./components/common/navbar";
-import { EventCalendar } from "./components/calendar";
-import IITRPR from "./components/About/iitRopar";
-import MEBME from "./components/About/me&be";
+import MEBME from "./components/About/me&bme";
+import IITRPR from "./components/About/IITRopar";
+import Sbaoi from "./components/About/SBAOI";
+import Stermi from "./components/About/STERMI";
+import { EventCalendar } from "./components/more/calendar";
+import Abstract from "./components/Abstract";
+
 
 function App() {
   return (
@@ -18,6 +22,9 @@ function App() {
             <Route path="/calendar" element={<EventCalendar/>}/>
             <Route path="/iitrpr" element={<IITRPR />}/>
             <Route path="/me&bme" element={<MEBME />}/>
+            <Route path="/sbaoi" element={<Sbaoi />}/>
+            <Route path="/stermi" element={<Stermi/>}/>
+            <Route path="/abstract" element={<Abstract/>}/>
           </Routes>
         </BrowserRouter>
         <Footer />
