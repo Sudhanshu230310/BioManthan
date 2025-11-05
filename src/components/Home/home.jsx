@@ -12,7 +12,7 @@ export default function HomePage() {
         <HomeSpeakers />
       </div>
       <div className="min-h-screen">
-        <div className="flex flex-col bg-gradient-to-br from-white to-blue-200 pt-20 pb-20 lg:flex-row min-h-screen">
+        <div className="flex flex-col border-b border-gray-400 pt-20 pb-20 lg:flex-row min-h-screen">
           <div className="w-full lg:w-1/2 bg-card">
             <EventGrid />
           </div>
@@ -44,7 +44,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-br py-10 from-white to-blue-200">
+        <div className="py-10">
           <ImportantUp />
         </div>
       </div>

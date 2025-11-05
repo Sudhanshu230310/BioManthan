@@ -3,7 +3,7 @@ import STERMI from "../../logos/STERMI.png"
 export default function Stermi() {
   return (
     <>
-      <div className="min-h-screen pt-20 bg-gradient-to-br from-white to-red-200">
+      <div className="min-h-screen pt-20">
         <div className="flex flex-col justify-center md:grid md:grid-cols-3 px-4 md:pr-10">
           <div className="w-60 h-60 mx-auto my-auto border border-gray-500 rounded-3xl overflow-hidden">
             <img src={STERMI} alt="" />

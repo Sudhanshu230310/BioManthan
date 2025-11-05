@@ -45,7 +45,7 @@ export default function HomeSpeakers() {
   }, [isAutoScrolling]);
 
   return (
-    <div className="w-full bg-gradient-to-br from-white to-blue-200 text-foreground ">
+    <div className="w-full border-b border-gray-400 text-foreground ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 ">
 
         {/* ---------------- Speakers Section ---------------- */}

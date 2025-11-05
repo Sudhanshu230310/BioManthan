@@ -9,6 +9,8 @@ import Sbaoi from "./components/About/SBAOI";
 import Stermi from "./components/About/STERMI";
 import { EventCalendar } from "./components/more/calendar";
 import Abstract from "./components/Abstract";
+import Sponsorship from "./components/sponsorship";
+import Committee from "./components/committee";
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
             <Route path="/sbaoi" element={<Sbaoi />}/>
             <Route path="/stermi" element={<Stermi/>}/>
             <Route path="/abstract" element={<Abstract/>}/>
+            <Route path="sponsorship" element={<Sponsorship/>}/>
+            <Route path="committee" element={<Committee/>}/>
           </Routes>
         </BrowserRouter>
         <Footer />

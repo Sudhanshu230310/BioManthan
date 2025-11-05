@@ -27,7 +27,7 @@ export default function MEBME() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white to-red-200 bg-background overflow-hidden">
+    <div className="min-h-screen bg-background overflow-hidden">
 
       {/* Departments Section */}
       <section className="relative pt-16 pb-24 px-6 max-w-7xl mx-auto">

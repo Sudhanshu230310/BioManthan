@@ -87,7 +87,7 @@ export function Navbar() {
               Speakers
             </a>
             <a
-              href="#sponsorship"
+              href="/sponsorship"
               className="text-slate-700 hover:text-red-600 transition-all hover:scale-105 "
             >
               Sponsorship
@@ -99,7 +99,7 @@ export function Navbar() {
               Geographical Views
             </a>
             <a
-              href="#committee"
+              href="/committee"
               className="text-slate-700 hover:text-red-600 transition-all hover:scale-105 "
             >
               Committee
@@ -260,7 +260,7 @@ export function Navbar() {
             Speakers
           </a>
           <a
-            href={`#`}
+            href={`/sponsorship`}
             className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
             onClick={() => setIsOpen(false)}
           >
@@ -274,7 +274,7 @@ export function Navbar() {
             Geographical Views
           </a>
           <a
-            href={`#`}
+            href={`/committee`}
             className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
             onClick={() => setIsOpen(false)}
           >

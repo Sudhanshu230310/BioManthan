@@ -40,7 +40,7 @@ export function Footer() {
     <>
       <footer
         id="footer"
-        className={`relative bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 border-t border-blue-200/50 overflow-hidden ${
+        className={`relative border-t border-gray-400 rounded-2xl bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50  overflow-hidden ${
           isVisible ? "footer-animate" : ""
         }`}
       >

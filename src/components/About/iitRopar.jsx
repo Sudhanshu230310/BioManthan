@@ -10,7 +10,7 @@ export default function IITRPR() {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-white to-red-200 lg:px-16 px-4">
+    <div className="lg:px-16 px-4">
       <div className="w-full text-3xl md:text-4xl lg:text-5xl font-serif pt-12 md:flex md:justify-center">
         <span className="text-red-600">Ind</span>ian Institute of Technology Ropar
       </div>
