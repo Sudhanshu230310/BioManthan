@@ -3,11 +3,13 @@ import { Hero } from "./heroHome";
 
 import HomeSpeakers from "./homePageSpeakers";
 import ImportantUp from "./importantHome";
+import Updates from "./updates";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
+      <Updates/>
       <div className="">
         <HomeSpeakers />
       </div>

@@ -1,4 +1,20 @@
-import s from "../../plenaryspeakersImages/1.png";
+import david from "../../plenaryspeakersImages/David.png"
+import ralph from "../../plenaryspeakersImages/Ralph.png"
+import amit from "../../plenaryspeakersImages/Amit.png"
+import huinan from "../../plenaryspeakersImages/Huinan.png"
+import roger from "../../plenaryspeakersImages/Roger.png"
+import sanjeev from "../../plenaryspeakersImages/Sanjeev.png"
+import ashok from "../../plenaryspeakersImages/Ashok.png"
+import dhirendra from "../../plenaryspeakersImages/Dhirendra.png"
+import jitendra from "../../plenaryspeakersImages/Jitendra.png"
+import ketul from "../../plenaryspeakersImages/Ketul.png"
+import ashutosh from "../../plenaryspeakersImages/Ashutosh.png"
+import bikramjit from "../../plenaryspeakersImages/Bikramjit.png"
+import chandan from "../../plenaryspeakersImages/Chandan.png"
+import prashant from "../../plenaryspeakersImages/Prashant.png"
+import gilson from "../../plenaryspeakersImages/Gilson.png"
+import savyasachi from "../../plenaryspeakersImages/Savyasachi.png"
+import vinoy from "../../plenaryspeakersImages/Vinoy.png"
 import { useEffect, useRef, useState } from "react";
 import { Megaphone, BookOpen } from "lucide-react";
 
@@ -7,14 +23,23 @@ export default function HomeSpeakers() {
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
 
   const people = [
-    { id: 1, name: "Sarah Johnson", image: s },
-    { id: 2, name: "Michael Chen", image: s },
-    { id: 3, name: "Emma Williams", image: s },
-    { id: 4, name: "James Rodriguez", image: s },
-    { id: 5, name: "Olivia Martinez", image: s },
-    { id: 6, name: "David Kim", image: s },
-    { id: 7, name: "Sophie Laurent", image: s },
-    { id: 8, name: "Alexander Brown", image: s },
+    { id: 1, name: "Prof. David B. Burr", image: david },
+    { id: 2, name: "Prof. (Dr.) Ralph Müller", image: ralph },
+    { id: 3, name: "Prof. Amit Bandyopadhyay", image: amit },
+    { id: 4, name: "Prof. Huinan Hannah Liu", image: huinan },
+    { id: 5, name: "Prof. Roger Jagdish Narayan", image: roger },
+    { id: 6, name: "Prof. Sanjeev Shroff", image: sanjeev },
+    { id: 7, name: "Prof. Ashok Kumar ", image: ashok },
+    { id: 8, name: "Prof. Dhirendra S Katti", image: dhirendra },
+    { id: 9, name: "Dr. Jitendra Sharma", image: jitendra },
+    { id: 10, name: "Prof. Ketul C. Popat", image: ketul },
+    { id: 11, name: "Prof. Ashutosh Khandha", image: ashutosh },
+    { id: 12, name: "Prof. Bikramjit Basu", image: bikramjit },
+    { id: 13, name: "Prof. Chandan K. Sen", image: chandan },
+    { id: 14, name: "Dr. Prashant N. Kumta", image: prashant },
+    { id: 15, name: "Prof. Gilson Khang", image: gilson },
+    { id: 16, name: "Prof. Savyasachi C. Thakkar", image: savyasachi },
+    { id: 17, name: "Prof. Vinoy Thomas", image: vinoy },
   ];
 
   const publications = [
@@ -62,7 +87,7 @@ export default function HomeSpeakers() {
             className="flex gap-8 overflow-x-auto scroll-smooth pb-6 px-2 mt-4
               [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
           >
-            {[...people, ...people].map((person, i) => (
+            {[...people].map((person, i) => (
               <div
                 key={`${person.id}-${i}`}
                 className="group flex-shrink-0 flex flex-col items-center justify-center rounded-xl 

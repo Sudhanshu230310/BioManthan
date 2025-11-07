@@ -2,16 +2,17 @@ import { useState } from "react"
 import i1 from "../../images/1.png"
 import i2 from "../../images/2.png"
 import i3 from "../../images/3.png"
-import i4 from "../../images/4.png"
+import i4 from "../../geoPhotos/spiti-valley.png"
 import i5 from "../../images/5.png"
 import i6 from "../../images/6.png"
-import i7 from "../../images/7.png"
+import i7 from "../../geoPhotos/rock-garden-chandigarh.png"
 import i8 from "../../images/8.png"
 import i9 from "../../images/9.png"
+import rosegarder from "../../geoPhotos/rock-garden-chandigarh.png"
 
 
 const sampleImages = [
-  i1,i2,i3,i4,i5,i6,i7,i8,i9,
+  i1,i2,i3,i4,i5,i6,i7,i8,i9
 ]
 
 export function EventGrid() {

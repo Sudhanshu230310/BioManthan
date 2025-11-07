@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu as MenuIcon, X, ChevronDown } from "lucide-react";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { Button } from "../Home/heroHome";
+import biomanthan from "../../logos/biomanthan.png"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +11,8 @@ export function Navbar() {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-slate-900">BioManthan</h1>
+          <div className="">
+            <img width={180}  src={biomanthan} alt="" />
           </div>
 
           {/* Desktop Navigation */}
