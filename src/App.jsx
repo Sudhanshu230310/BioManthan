@@ -11,6 +11,10 @@ import { EventCalendar } from "./components/more/calendar";
 import Abstract from "./components/Abstract";
 import Sponsorship from "./components/sponsorship";
 import Committee from "./components/committee";
+import Contact from "./components/more/contact";
+import Accommodation from "./components/more/Accommodation";
+import Geographicalview from "./components/geographical";
+import Speakers from "./components/speakers";
 
 
 function App() {
@@ -27,8 +31,12 @@ function App() {
             <Route path="/sbaoi" element={<Sbaoi />}/>
             <Route path="/stermi" element={<Stermi/>}/>
             <Route path="/abstract" element={<Abstract/>}/>
-            <Route path="sponsorship" element={<Sponsorship/>}/>
-            <Route path="committee" element={<Committee/>}/>
+            <Route path="/sponsorship" element={<Sponsorship/>}/>
+            <Route path="/committee" element={<Committee/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/accommodation" element={<Accommodation/>}/>
+            <Route path="/geo" element={<Geographicalview/>}/>
+            <Route path="/speakers" element={<Speakers/>}/>
           </Routes>
         </BrowserRouter>
         <Footer />

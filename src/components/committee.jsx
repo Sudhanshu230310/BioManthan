@@ -1,7 +1,24 @@
-function CommitteeMember({ name, title, subtitle, highlight }) {
+import rajeev from "../committeeImages/rajeev.png";
+import chandra from "../committeeImages/Chandra.png";
+import ashok from "../committeeImages/Ashok.png"
+import dhirendra from "../committeeImages/Dhirendra.png"
+import naveen from "../committeeImages/naveen.png"
+import vijay from "../committeeImages/Vijay.png"
+import ramesh from "../committeeImages/Ramesh.png"
+import sanjay from "../committeeImages/Sanjay.png"
+import anupam from "../committeeImages/Anupam.png"
+import durba from "../committeeImages/Durba.png"
+import bodhisatwa from "../committeeImages/Bodhisatwa.png"
+import srivatsava from "../committeeImages/Srivatsava.png"
+import suryasnata from "../committeeImages/Suryasnata.png"
+
+
+
+
+function CommitteeMember({ name, title, subtitle, highlight, image }) {
   return (
     <div
-      className={`group relative rounded-xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer ${
+      className={`group relative rounded-xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer min-h-96 ${
         highlight
           ? "bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-lg"
           : "bg-card text-card-foreground border border-border hover:border-primary/50"
@@ -10,20 +27,30 @@ function CommitteeMember({ name, title, subtitle, highlight }) {
       <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-accent/0 via-accent/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
       <div className="relative z-10">
-        <div className="mb-4">
-          <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
-            <span className="text-lg font-bold text-accent">{name.charAt(0)}</span>
-          </div>
+        <div className="h-96 flex justify-center">
+          <img
+            className="rounded-full w-72 h-72 mb-4 object-contain overflow-hidden"
+            src={image}
+            alt=""
+          />
         </div>
 
         <h3 className="text-lg font-semibold leading-tight mb-1">{name}</h3>
 
-        <p className={`text-sm font-medium mb-2 ${highlight ? "text-primary-foreground/90" : "text-primary"}`}>
+        <p
+          className={`text-sm font-medium mb-2 ${
+            highlight ? "text-primary-foreground/90" : "text-primary"
+          }`}
+        >
           {title}
         </p>
 
         {subtitle && (
-          <p className={`text-xs ${highlight ? "text-primary-foreground/70" : "text-muted-foreground"}`}>
+          <p
+            className={`text-xs ${
+              highlight ? "text-primary-foreground/70" : "text-muted-foreground"
+            }`}
+          >
             {subtitle}
           </p>
         )}
@@ -39,7 +66,7 @@ function CommitteeMember({ name, title, subtitle, highlight }) {
         />
       </div>
     </div>
-  )
+  );
 }
 
 function CommitteeHeader() {
@@ -71,78 +98,152 @@ function CommitteeHeader() {
           className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up"
           style={{ animationDelay: "0.2s" }}
         >
-          Meet the distinguished leaders and experts guiding Bio-MANTHAN, a premier biomedicine research symposium at
-          IIT Ropar
+          Meet the distinguished leaders and experts guiding Bio-MANTHAN, a
+          premier biomedicine research symposium at IIT Ropar
         </p>
       </div>
     </div>
-  )
+  );
 }
 
 const patrons = [
-  { name: "Prof. Rajeev Ahuja", title: "Director, IIT Ropar" },
-  { name: "Prof. Chandra P Sharma", title: "Founder, SBAOI" },
-  { name: "Prof. Ashok Kumar", title: "President, SBAOI", subtitle: "IIT Kanpur" },
-  { name: "Prof. Dhirendra S Katti", title: "Director, IIT Goa", subtitle: "IIT Kanpur" },
-]
+  { name: "Prof. Rajeev Ahuja", title: "Director, IIT Ropar", image: rajeev },
+  { name: "Prof. Chandra P Sharma", title: "Founder, SBAOI", image: chandra },
+  {
+    name: "Prof. Ashok Kumar",
+    title: "President, SBAOI",
+    subtitle: "IIT Kanpur",
+    image:ashok
+  },
+  {
+    name: "Prof. Dhirendra S Katti",
+    title: "Director, IIT Goa",
+    subtitle: "IIT Kanpur",
+    image: dhirendra
+  },
+];
 
 function PatronsSection() {
   return (
     <section className="px-4 border sm:mx-10 bg-gray-200 mx-4 py-10 rounded-2xl">
       <div className="max-w-7xl mx-auto">
         <div className="mb-4 animate-fade-in-up">
-          <h2 className="text-4xl font-serif text-foreground mb-2"><span className="text-red-600">Pat</span>rons</h2>
+          <h2 className="text-4xl font-serif text-foreground mb-2">
+            <span className="text-red-600">Pat</span>rons
+          </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {patrons.map((patron, idx) => (
-            <div key={idx} style={{ animationDelay: `${idx * 0.1}s` }} className="animate-fade-in-up">
-              <CommitteeMember name={patron.name} title={patron.title} subtitle={patron.subtitle} />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-const organizingCommittee = [
-  { name: "Prof. Navin Kumar", title: "Convener", subtitle: "IIT Ropar", highlight: true },
-  { name: "Prof. (Dr.) Vijay G Goni", title: "Co-Convener", subtitle: "Head, Orthopaedics | PGIMER Chandigarh" },
-  { name: "Prof. (Dr.) Ramesh K Sen", title: "Co-Convener", subtitle: "Head, Orthopaedics | Max Hospital Mohali" },
-  { name: "Prof. (Dr.) Sanjay K Bhadada", title: "Co-Convener", subtitle: "Head, Endocrinology | PGIMER Chandigarh" },
-  { name: "Prof. Anupam Agrawal", title: "Committee Member", subtitle: "IIT Ropar" },
-  { name: "Prof. Durba Pal", title: "Committee Member", subtitle: "IIT Ropar" },
-  { name: "Prof. Bodhisatwa Das", title: "Committee Member", subtitle: "IIT Ropar" },
-  { name: "Prof. Srivatsava Naidu", title: "Committee Member", subtitle: "IIT Ropar" },
-  { name: "Prof. Suryasnata Tripathy", title: "Committee Member", subtitle: "IIT Ropar" },
-]
-
-function OrganizingCommitteeSection() {
-  return (
-    <section className="py-16 px-4 bg-secondary/5 border my-10 sm:mx-10 mx-4 rounded-2xl bg-gray-200 border-gray-400">
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-16 animate-fade-in-up">
-          <h2 className="text-4xl font-serif text-foreground mb-2"><span className="text-red-600">Org</span>anizing Committee</h2>
-          <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full" />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {organizingCommittee.map((member, idx) => (
-            <div key={idx} style={{ animationDelay: `${idx * 0.08}s` }} className="animate-fade-in-up">
+            <div
+              key={idx}
+              style={{ animationDelay: `${idx * 0.1}s` }}
+              className="animate-fade-in-up"
+            >
               <CommitteeMember
-                name={member.name}
-                title={member.title}
-                subtitle={member.subtitle}
-                highlight={member.highlight}
+                name={patron.name}
+                title={patron.title}
+                subtitle={patron.subtitle}
+                image={patron.image}
               />
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
+}
+
+const organizingCommittee = [
+  {
+    name: "Prof. Navin Kumar",
+    title: "Convener",
+    subtitle: "IIT Ropar",
+    highlight: true,
+    image:naveen
+  },
+  {
+    name: "Prof. (Dr.) Vijay G Goni",
+    title: "Co-Convener",
+    subtitle: "Head, Orthopaedics | PGIMER Chandigarh",
+    image:vijay
+  },
+  {
+    name: "Prof. (Dr.) Ramesh K Sen",
+    title: "Co-Convener",
+    subtitle: "Head, Orthopaedics | Max Hospital Mohali",
+    image : ramesh
+  },
+  {
+    name: "Prof. (Dr.) Sanjay K Bhadada",
+    title: "Co-Convener",
+    subtitle: "Head, Endocrinology | PGIMER Chandigarh",
+    image: sanjay
+  },
+  {
+    name: "Prof. Anupam Agrawal",
+    title: "Committee Member",
+    subtitle: "IIT Ropar",
+    image: anupam
+  },
+  { name: "Prof. Durba Pal", 
+    title: "Committee Member", 
+    subtitle: "IIT Ropar",
+    image: durba
+
+  },
+  {
+    name: "Prof. Bodhisatwa Das",
+    title: "Committee Member",
+    subtitle: "IIT Ropar",
+    image: bodhisatwa
+  },
+  {
+    name: "Prof. Srivatsava Naidu",
+    title: "Committee Member",
+    subtitle: "IIT Ropar",
+    image: srivatsava
+  },
+  {
+    name: "Prof. Suryasnata Tripathy",
+    title: "Committee Member",
+    subtitle: "IIT Ropar",
+    image: suryasnata
+  },
+];
+
+function OrganizingCommitteeSection() {
+  return (
+    <section className="py-16 px-4 bg-secondary/5 border my-10 sm:mx-10 mx-4 rounded-2xl bg-gray-200 border-gray-400">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-16 animate-fade-in-up">
+          <h2 className="text-4xl font-serif text-foreground mb-2">
+            <span className="text-red-600">Org</span>anizing Committee
+          </h2>
+          <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full" />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+          {organizingCommittee.map((member, idx) => (
+            <div
+              key={idx}
+              style={{ animationDelay: `${idx * 0.08}s` }}
+              className="animate-fade-in-up"
+            >
+              <CommitteeMember
+                name={member.name}
+                title={member.title}
+                subtitle={member.subtitle}
+                highlight={member.highlight}
+                image={member.image}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default function Committee() {
@@ -152,5 +253,5 @@ export default function Committee() {
       <PatronsSection />
       <OrganizingCommitteeSection />
     </main>
-  )
+  );
 }

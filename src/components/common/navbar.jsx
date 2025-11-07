@@ -81,7 +81,7 @@ export function Navbar() {
               Abstract
             </a>
             <a
-              href="#speakers"
+              href="/speakers"
               className="text-slate-700 hover:text-red-600 transition-all hover:scale-105 "
             >
               Speakers
@@ -93,7 +93,7 @@ export function Navbar() {
               Sponsorship
             </a>
             <a
-              href="#geo"
+              href="/geo"
               className="text-slate-700 hover:text-red-600 transition-all hover:scale-105 "
             >
               Geographical Views
@@ -129,7 +129,7 @@ export function Navbar() {
                   </MenuItem>
                   <MenuItem>
                     <a
-                      href="#"
+                      href="/accommodation"
                       className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
                     >
                       Accommodation & Travel
@@ -137,7 +137,7 @@ export function Navbar() {
                   </MenuItem>
                   <MenuItem>
                     <a
-                      href="#"
+                      href="/contact"
                       className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
                     >
                       Contact us
@@ -253,7 +253,7 @@ export function Navbar() {
             Abstract
           </a>
           <a
-            href={`#`}
+            href={`/speakers`}
             className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
             onClick={() => setIsOpen(false)}
           >
@@ -267,7 +267,7 @@ export function Navbar() {
             Sponsorship
           </a>
           <a
-            href={`#`}
+            href={`/geo`}
             className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
             onClick={() => setIsOpen(false)}
           >
@@ -304,7 +304,7 @@ export function Navbar() {
                 </MenuItem>
                 <MenuItem>
                   <a
-                    href="#"
+                    href="/accommodation"
                     className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     Accommodation & Travel
@@ -312,7 +312,7 @@ export function Navbar() {
                 </MenuItem>
                 <MenuItem>
                   <a
-                    href="#"
+                    href="/contact"
                     className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     Contact us

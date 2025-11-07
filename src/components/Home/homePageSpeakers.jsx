@@ -1,4 +1,4 @@
-import s from "../../speakersImages/1.png";
+import s from "../../plenaryspeakersImages/1.png";
 import { useEffect, useRef, useState } from "react";
 import { Megaphone, BookOpen } from "lucide-react";
 

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Abstract() {
   return (
     <>
-      <div className=" pb-10 border-b border-gray-400">
+      <div className=" pb-10">
         <div className="flex justify-center text-4xl lg:text-5xl font-serif pt-12">
           <span className="text-red-600">A</span>bstract
         </div>
