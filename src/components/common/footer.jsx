@@ -1,4 +1,4 @@
-import { GraduationCap, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, ArrowUp } from "lucide-react"
+import { GraduationCap, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, ArrowUp, Youtube } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export function Footer() {
@@ -84,14 +84,15 @@ export function Footer() {
               </p>
               <div className="flex gap-4 pt-2">
                 {[
-                  { icon: Facebook, color: "hover:bg-blue-600" },
-                  { icon: Twitter, color: "hover:bg-sky-500" },
-                  { icon: Instagram, color: "hover:bg-pink-500" },
-                  { icon: Linkedin, color: "hover:bg-blue-700" }
-                ].map(({ icon: Icon, color }, index) => (
+                  { icon: Facebook, color: "hover:bg-blue-600",link:"https://www.facebook.com/PyrodynamicsIndia/posts/we-are-pleased-to-inform-you-that-indian-institute-of-technology-ropar-is-organi/1252066150271729/"},
+                  { icon: Twitter, color: "hover:bg-sky-500",link:"https://x.com/BioManthan2025" },
+                  { icon: Youtube, color: "hover:bg-red-500",link:"https://www.youtube.com/@BioManthanIITRopar" },
+                  { icon: Linkedin, color: "hover:bg-blue-700",link:"https://www.linkedin.com/company/bio-manthan-2025-iit-ropar/" }
+                ].map(({ icon: Icon, color,link }, index) => (
                   <a
                     key={index}
-                    href="#"
+                    href={link}
+                    target="_blank"
                     className={`p-2 bg-white rounded-xl shadow-md hover:shadow-lg text-gray-600 ${color} hover:text-white transition-all duration-300 transform hover:scale-125 hover:-translate-y-1`}
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
@@ -108,16 +109,17 @@ export function Footer() {
                 <div className="absolute bottom-0 left-0 w-0 h-1 rounded-full transition-all duration-500 group-hover:w-full"></div>
               </h5>
               <ul className="space-y-4 text-sm">
-                {["About", "Speakers", "Schedule", "FAQ"].map((link, index) => (
-                  <li key={link} className="transform transition-all duration-300 hover:translate-x-3">
+                {[{name:"Abstract Submission",link:"https://docs.google.com/forms/d/e/1FAIpQLSf7ovkrs4-uP8cbwDxvo0jKvDjMw0AUdWMA9gOEqW_azohy3w/viewform"}, {name:"Registration",link:"https://sites.google.com/iitrpr.ac.in/biomanthan/registration?authuser=0"}, {name:"Accommodation",link:"https://docs.google.com/forms/d/e/1FAIpQLSeutGLD_HRLzV_mkYmE6lWaouMBUTC3rw529Jx3HBvRLRWsDA/viewform"},{name:"Sponsorship",link:"/sponsorship"},{name:"Organizing Committee",link:"/committee"},{name:"Contact us",link:"/contact"}].map(({name,link}, index) => (
+                  <li key={index} className="transform transition-all duration-300 hover:translate-x-3">
                     <a
-                      href={`#${link.toLowerCase().replace(" ", "")}`}
+                      href={link}
+                      target={name !== "Sponsorship" ? undefined : name!=="Organizing Committee" ? undefined : name!=="Contact us" ? undefined :"_blank"}
                       className="text-gray-600 hover:text-blue-600 transition-all duration-300 relative group flex items-center gap-2"
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
                       <div className="w-1 h-1 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <span className="relative">
-                        {link}
+                        {name}
                         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 transition-all duration-300 group-hover:w-full"></span>
                       </span>
                     </a>
@@ -176,10 +178,10 @@ export function Footer() {
                     <Mail className="h-4 w-4 text-white" />
                   </div>
                   <a
-                    href="mailto:info@bluecrest.edu"
+                    href="mailto:biomanthan@iitrpr.ac.in"
                     className="text-gray-600 hover:text-orange-600 transition-colors duration-300 font-medium"
                   >
-                    info@bluecrest.edu
+                    biomanthan@iitrpr.ac.in
                   </a>
                 </div>
                 <div className="flex items-start gap-4 group hover:bg-white/60 p-3 rounded-xl transition-all duration-300 hover:shadow-md">
@@ -187,8 +189,8 @@ export function Footer() {
                     <MapPin className="h-4 w-4 text-white" />
                   </div>
                   <div className="text-gray-600 group-hover:text-gray-800 transition-colors duration-300 cursor-pointer hover:text-blue-600">
-                    <p className="font-medium">123 College Avenue</p>
-                    <p>Education City, EC 12345</p>
+                    <p className="font-medium">Indian Institute of Technology(IIT Ropar)</p>
+                    <p>Ropar-140001, Punjab (India)</p>
                   </div>
                 </div>
               </div>

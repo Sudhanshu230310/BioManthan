@@ -117,8 +117,26 @@ import Pavan from "../nationalspeakersImages/Pavan.png"
 import Pallab from "../nationalspeakersImages/Pallab.png"
 import Arindam from "../nationalspeakersImages/Arindam.png"
 import Prasoon from "../nationalspeakersImages/Prasoon.png"
-
-
+import Sneha from "../nationalspeakersImages/Sneha.png"
+import Emon from "../nationalspeakersImages/Emon.png"
+import Himanshu from "../nationalspeakersImages/Himansu.png"
+import Chinmaya from "../nationalspeakersImages/Chinmaya.png"
+import Bidyut from "../nationalspeakersImages/Bidyut.png"
+import Dipankar from "../nationalspeakersImages/Dipankar.png"
+import Kanagaraj1 from "../nationalspeakersImages/Kanagaraj1.png"
+import Gorachand from "../nationalspeakersImages/Gorachand.png"
+import Saba from "../nationalspeakersImages/Saba.png"
+import Priya from "../nationalspeakersImages/Priya.png"
+import Vinay from "../nationalspeakersImages/Vinay.png"
+import Deba from "../nationalspeakersImages/Deba.png"
+import Shyam from "../nationalspeakersImages/Shyam.png"
+import Asish from "../nationalspeakersImages/Asish.png"
+import Marinmoy from "../nationalspeakersImages/Marinmoy.png"
+import AjayK from "../nationalspeakersImages/AjayK.png"
+import Mukesh from "../nationalspeakersImages/Mukesh.png"
+import Shalini from "../nationalspeakersImages/Shalini.png"
+import ShyamS from "../nationalspeakersImages/ShyamS.png"
+import MukeshD from "../nationalspeakersImages/MukeshD.png"
 
 const speakers = {
   plenary: [
@@ -735,45 +753,357 @@ const speakers = {
       image: Piyali,
       category: "National",
     },
-    // {
-    //   name: "Dr. Saroj Kumar",
-    //   title: "Add. Prof. Biophysics",
-    //   affiliation: "AIIMS, New Delhi",
-    //   image: Saroj,
-    //   category: "National",
-    // },
-    // {
-    //   name: "Dr. Saroj Kumar",
-    //   title: "Add. Prof. Biophysics",
-    //   affiliation: "AIIMS, New Delhi",
-    //   image: Saroj,
-    //   category: "National",
-    // },
-    // {
-    //   name: "Dr. Saroj Kumar",
-    //   title: "Add. Prof. Biophysics",
-    //   affiliation: "AIIMS, New Delhi",
-    //   image: Saroj,
-    //   category: "National",
-    // },
-    // {
-    //   name: "Dr. Saroj Kumar",
-    //   title: "Add. Prof. Biophysics",
-    //   affiliation: "AIIMS, New Delhi",
-    //   image: Saroj,
-    //   category: "National",
-    // },
-    // {
-    //   name: "Dr. Saroj Kumar",
-    //   title: "Add. Prof. Biophysics",
-    //   affiliation: "AIIMS, New Delhi",
-    //   image: Saroj,
-    //   category: "National",
-    // },
+    {
+      name: "Prof. S. Raghavan",
+      title: "Prof. (HAG)Retd.",
+      affiliation: "NIT Trichy",
+      image: Raghavan,
+      category: "National",
+    },
+    {
+      name: "Dr. Ramya Rmdoss",
+      title: "Professor & Head",
+      affiliation: "Saveetha University, Chennai",
+      image: Ramya,
+      category: "National",
+    },
+    {
+      name: "Dr. Deepthy Menon",
+      title: "Professor",
+      affiliation: "AIMS, Kochi",
+      image: Deepthy,
+      category: "National",
+    },
+    {
+      name: "Prof. Pradip Paik",
+      title: "Professor, Asso. Dean,",
+      affiliation: "IIT BHU",
+      image: Pradip,
+      category: "National",
+    },
+    {
+      name: "Dr. Bharath Raja Guru",
+      title: "Professor",
+      affiliation: "MIT, Manipal ",
+      image: Bharath,
+      category: "National",
+    },
+    {
+      name: "Dr. Bikesh Kumar Singh",
+      title: "Asso. Professor, NIT Raipur",
+      affiliation: "",
+      image: Bikesh,
+      category: "National",
+    },
+    {
+      name: "Dr. Suresh PS",
+      title: "Asso. Professor, NIT Calicut",
+      affiliation: "",
+      image: Suresh,
+      category: "National",
+    },
+    {
+      name: "Dr. Sujeet N Charugulla",
+      title: "Cluster Head Medical Affairs",
+      affiliation: "Dr. Reddy’s Lab",
+      image: Sujeet,
+      category: "National",
+    },
+    {
+      name: "Dr. Saurabh Gupta",
+      title: "Asso.  Professor, NIT Raipur",
+      affiliation: "",
+      image: SaurabhG,
+      category: "National",
+    },
+    {
+      name: "Dr. Naveen Kumar Singh",
+      title: "Asst. Prof. Biomedical Engg.",
+      affiliation: "IIT Delhi",
+      image: Naveen,
+      category: "National",
+    },
+    {
+      name: "Dr. Mamoni Dash",
+      title: "Scientist, ILS Bhubaneswar",
+      affiliation: "",
+      image: Mamoni,
+      category: "National",
+    },
+    {
+      name: "Dr. Shiny Velayudhan",
+      title: "Scientist – F, SCTIMST, Thiruvananthapuram",
+      affiliation: "",
+      image: Shiny,
+      category: "National",
+    },
+    {
+      name: "Dr. Rishikesh Pandey",
+      title: "Asst. Prof. BSBE",
+      affiliation: "IIT Roorkee",
+      image: Rishikesh,
+      category: "National",
+    },
+    {
+      name: "Dr. Souptick Chanda ",
+      title: "Asst. Prof., BSBE",
+      affiliation: "IIT Guwahati",
+      image: Souptick,
+      category: "National",
+    },
+    {
+      name: "Dr. Saroj Kumar",
+      title: "Add. Prof. Biophysics",
+      affiliation: "AIIMS, New Delhi",
+      image: Saroj,
+      category: "National",
+    },
+    {
+      name: "Mr. Arvind Kumar Prajapati",
+      title: "Scientist/Engineer 'D', ",
+      affiliation: "SCTIMST, Thiruvananthapuram",
+      image: Arvind,
+      category: "National",
+    },
+    {
+      name: "Dr. Parvaiz Ahmad Shiekh",
+      title: "DST INSPIRE Faculty",
+      affiliation: "IIT Delhi",
+      image: Parvaiz,
+      category: "National",
+    },
+    {
+      name: "Dr. Abdul Rasheed P",
+      title: "Ramalingaswami Fellow",
+      affiliation: "IIT Palakkad",
+      image: Abdul,
+      category: "National",
+    },
+    {
+      name: "Dr. Shirsendu Ghosh",
+      title: "Asst. Professor, IIT Jammu",
+      affiliation: "",
+      image: Saroj,
+      category: "National",
+    },
 
-
-
-
+    {
+      name: "Prof. Suveen Kumar",
+      title: "Asst. Professor",
+      affiliation: "NIPER Ahmedabad",
+      image: Suveen,
+      category: "National",
+    },
+    {
+      name: "Dr. Madhu Gupta",
+      title: "Assistant professor",
+      affiliation: "University of Lucknow",
+      image: Madhu,
+      category: "National",
+    },
+    {
+      name: "Dr. Subhadeep Roy",
+      title: "Asst. Professor, MRSB",
+      affiliation: "BIT Mesra ,Ranchi",
+      image: Subhadeep,
+      category: "National",
+    },
+    {
+      name: "Dr. Prodyut Dhar",
+      title: "Asst. Prof., Biochemical",
+      affiliation: "IIT BHU",
+      image: Prodyut,
+      category: "National",
+    },
+    {
+      name: "Dr. Cota Navin Gupta ",
+      title: "Asst. Prof., Bioscience & Bioengg.",
+      affiliation: "IIT Guwahati",
+      image: Cota,
+      category: "National",
+    },
+    {
+      name: "Dr. Vivek Verma",
+      title: "Asst. Professor, IIT Patna",
+      affiliation: "",
+      image: Saroj,
+      category: "National",
+    },
+    {
+      name: "Dr. Manju S.",
+      title: "Scientist ‘F”",
+      affiliation: "SCTIMST, Trivandrum",
+      image: Manju,
+      category: "National",
+    },
+    {
+      name: "Dr. Saurabh Kumar",
+      title: "Assistant Professor",
+      affiliation: "NIPER Guwahati",
+      image: Saurabh,
+      category: "National",
+    },
+    {
+      name: "Dr. Pavan Girish Pandit",
+      title: "Assistant Professor",
+      affiliation: "NIT Surathkal",
+      image: Pavan,
+      category: "National",
+    },
+    {
+      name: "Dr. Pallab Datta",
+      title: "Assistant Professor",
+      affiliation: "NIPER Kolkata ",
+      image: Pallab,
+      category: "National",
+    },
+    {
+      name: "Dr. Arindam Bit ",
+      title: "Asst. Professor , NIT Raipur",
+      affiliation: "",
+      image: Arindam,
+      category: "National",
+    },
+    {
+      name: "Dr. Prasoon Kumar",
+      title: "Assistant Professor",
+      affiliation: "NIT Rourkela",
+      image: Prasoon,
+      category: "National",
+    },
+    {
+      name: "Dr. Sneha Singh",
+      title: "Asst. Professor",
+      affiliation: "BIT Mesra, Ranchi",
+      image: Sneha,
+      category: "National",
+    },
+    {
+      name: "Dr. Emon Barua",
+      title: "Assistant Professor",
+      affiliation: "MANIT Bhopal",
+      image: Emon,
+      category: "National",
+    },
+    {
+      name: "Dr. Himansu Sekhar Nanda",
+      title: "Assistant Professor ",
+      affiliation: "IIITDM-Jabalpur",
+      image: Himanshu,
+      category: "National",
+    },
+    {
+      name: "Dr. Chinmaya Mahapatra",
+      title: "Assistant Professor",
+      affiliation: "NIT Raipur",
+      image: Chinmaya,
+      category: "National",
+    },
+    {
+      name: "Dr. Bidyut Pal",
+      title: "Assistant Professor",
+      affiliation: "IIEST Shibpur",
+      image: Bidyut,
+      category: "National",
+    },
+    {
+      name: "Dr. Dipankar Das",
+      title: "Assistant Professor",
+      affiliation: "NIPER, Mohali",
+      image: Dipankar,
+      category: "National",
+    },
+    {
+      name: "Dr. P. Kanagaraj",
+      title: "Assistant  Professor",
+      affiliation: "SRM, Kattankulathur",
+      image: Kanagaraj1,
+      category: "National",
+    },
+    {
+      name: "Dr. Gorachand Dutta",
+      title: "Asst. Prof., Medical Science",
+      affiliation: "IIT Kharagpur",
+      image: Gorachand,
+      category: "National",
+    },
+    {
+      name: "Dr. Saba Naqvi",
+      title: "Asst. Professor",
+      affiliation: "NIPER Raebareli",
+      image: Saba,
+      category: "National",
+    },
+    {
+      name: "Dr. Priya Vashisth",
+      title: "Asst.  Professor, IIT Delhi",
+      affiliation: "",
+      image: Priya,
+      category: "National",
+    },
+    {
+      name: "Dr. Vinay Sharma",
+      title: "Asst. Professor, IIT Jammu",
+      affiliation: "",
+      image: Vinay,
+      category: "National",
+    },
+    {
+      name: "Dr. Deba Prasad Dash",
+      title: "Asst. Professor",
+      affiliation: "TIET, Patiala",
+      image: Deba,
+      category: "National",
+    },
+    {
+      name: "Prof. Shyam S. Sharma",
+      title: "Professor & Head; Dept. of Pharmacology & Toxicology",
+      affiliation: "NIPER, Mohali",
+      image: ShyamS,
+      category: "National",
+    },
+    {
+      name: "Prof. Asish Pal",
+      title: "Scientist-F (Professor) Principal Investigator",
+      affiliation: "INST, Mohali",
+      image: Asish,
+      category: "National",
+    },
+    {
+      name: "Dr. Marinmoy De",
+      title: "Asso. Prof. Dept. of Organic Chemistry",
+      affiliation: "IISC, Bengaluru",
+      image: Marinmoy,
+      category: "National",
+    },
+    {
+      name: "Dr. Ajay Kumar Rajput",
+      title: "Asso. Prof. Department of",
+      affiliation: "Orthopedics, UPUMS, Saifai, UP",
+      image: AjayK,
+      category: "National",
+    },
+    {
+      name: "Dr. Mukesh Dhanka",
+      title: "Asso. Prof. Dept. of ",
+      affiliation: "Biotechnology, NIT, Raipur",
+      image: MukeshD,
+      category: "National",
+    },
+    {
+      name: "Dr. Shalini Mani",
+      title: "Asso. Prof. Dept. of",
+      affiliation: "Biotechnology,JIIT, Noida",
+      image: Shalini,
+      category: "National",
+    },
+    {
+      name: "Dr. Mukesh Dhanka",
+      title: "AAsst. Prof. Biological Engineering",
+      affiliation: "IIT Gandhinagar",
+      image: MukeshD,
+      category: "National",
+    },
   ],
 }
 
