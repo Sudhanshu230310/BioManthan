@@ -883,7 +883,7 @@ const speakers = {
       name: "Dr. Shirsendu Ghosh",
       title: "Asst. Professor, IIT Jammu",
       affiliation: "",
-      image: Saroj,
+      image: Shirsendu,
       category: "National",
     },
 
@@ -1097,13 +1097,7 @@ const speakers = {
       image: Shalini,
       category: "National",
     },
-    {
-      name: "Dr. Mukesh Dhanka",
-      title: "AAsst. Prof. Biological Engineering",
-      affiliation: "IIT Gandhinagar",
-      image: MukeshD,
-      category: "National",
-    },
+    
   ],
 }
 
