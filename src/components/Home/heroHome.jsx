@@ -28,7 +28,7 @@ export function Button({
 
 export function Hero() {
   return (
-    <section className="relative w-screen h-[48rem] flex items-center justify-center overflow-hidden">
+    <section className="relative w-screen h-[48rem] flex items-center lg:px-20 px-10 overflow-hidden">
       {/* Background Image */}
       <img
         src={IIT}
@@ -46,15 +46,15 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 ">
+        <div className="grid gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 text-white">
             <div className="space-y-4">
               <h2 className="text-xl font-mono uppercase tracking-wider">
                 40th International Conference
               </h2>
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight text-balance">
+              <h1 className="text-5xl font-serif md:text-6xl font-bold">
                 BioMANTHAN 2025
               </h1>
               <p className="text-lg text-white/80 leading-relaxed">
@@ -79,14 +79,18 @@ export function Hero() {
 
             {/* Event Details */}
             <div className="grid grid-cols-2 gap-4 pt-8 border-t border-white/20">
-              <div>
-                <p className="text-sm text-white/60">Date</p>
-                <p className="font-semibold">Dec 4–7, 2025</p>
+              <div className="text-2xl">
+                <p className=" text-white/60">Date</p>
+                <p className="font-semibold ">Dec' 4–7, 2025</p>
               </div>
-              <div>
-                <p className="text-sm text-white/60">Location</p>
+              <div className="text-2xl">
+                <p className=" text-white/60">Location</p>
                 <p className="font-semibold">IIT Ropar</p>
               </div>
+            </div>
+            <div className="text-2xl ">
+              <p className="text-white/60">Workshop/Hands-on Training</p>
+              <p>Dec' 3-4, 2025</p>
             </div>
           </div>
 

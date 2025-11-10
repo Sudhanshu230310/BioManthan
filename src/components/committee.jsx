@@ -1,19 +1,16 @@
 import rajeev from "../committeeImages/rajeev.png";
 import chandra from "../committeeImages/Chandra.png";
-import ashok from "../committeeImages/Ashok.png"
-import dhirendra from "../committeeImages/Dhirendra.png"
-import naveen from "../committeeImages/naveen.png"
-import vijay from "../committeeImages/Vijay.png"
-import ramesh from "../committeeImages/Ramesh.png"
-import sanjay from "../committeeImages/Sanjay.png"
-import anupam from "../committeeImages/Anupam.png"
-import durba from "../committeeImages/Durba.png"
-import bodhisatwa from "../committeeImages/Bodhisatwa.png"
-import srivatsava from "../committeeImages/Srivatsava.png"
-import suryasnata from "../committeeImages/Suryasnata.png"
-
-
-
+import ashok from "../committeeImages/Ashok.png";
+import dhirendra from "../committeeImages/Dhirendra.png";
+import naveen from "../committeeImages/naveen.png";
+import vijay from "../committeeImages/Vijay.png";
+import ramesh from "../committeeImages/Ramesh.png";
+import sanjay from "../committeeImages/Sanjay.png";
+import anupam from "../committeeImages/Anupam.png";
+import durba from "../committeeImages/Durba.png";
+import bodhisatwa from "../committeeImages/Bodhisatwa.png";
+import srivatsava from "../committeeImages/Srivatsava.png";
+import suryasnata from "../committeeImages/Suryasnata.png";
 
 function CommitteeMember({ name, title, subtitle, highlight, image }) {
   return (
@@ -113,13 +110,13 @@ const patrons = [
     name: "Prof. Ashok Kumar",
     title: "President, SBAOI",
     subtitle: "IIT Kanpur",
-    image:ashok
+    image: ashok,
   },
   {
     name: "Prof. Dhirendra S Katti",
     title: "Director, IIT Goa",
     subtitle: "IIT Kanpur",
-    image: dhirendra
+    image: dhirendra,
   },
 ];
 
@@ -133,6 +130,46 @@ function PatronsSection() {
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full" />
         </div>
+
+
+        <div
+          className={`group relative rounded-xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer min-h-96 ${"bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-lg"
+          }`}
+        >
+          <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-accent/0 via-accent/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+          <div className="relative z-10">
+            <div className="h-96 flex justify-center">
+              <img
+                className="rounded-full w-72 h-72 mb-4 object-contain overflow-hidden"
+                src={rajeev}
+                alt=""
+              />
+            </div>
+
+            <h3 className="text-lg font-semibold leading-tight mb-1">Prof. Rajeev Ahuja</h3>
+
+            <p
+              className={`text-sm font-medium mb-2 ${
+                "text-primary-foreground/90"
+              }`}
+            >
+              Director, IIT Ropar
+            </p>
+          </div>
+
+          {/* <div className="absolute inset-0 rounded-xl pointer-events-none group-hover:animate-pulse">
+            <div
+              className={`absolute inset-0 rounded-xl ${
+                highlight
+                  ? "bg-gradient-to-r from-accent/20 to-transparent"
+                  : "bg-gradient-to-r from-primary/10 to-transparent"
+              } opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+            />
+          </div> */}
+        </div>
+
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {patrons.map((patron, idx) => (
@@ -161,55 +198,55 @@ const organizingCommittee = [
     title: "Convener",
     subtitle: "IIT Ropar",
     highlight: true,
-    image:naveen
+    image: naveen,
   },
   {
     name: "Prof. (Dr.) Vijay G Goni",
     title: "Co-Convener",
     subtitle: "Head, Orthopaedics | PGIMER Chandigarh",
-    image:vijay
+    image: vijay,
   },
   {
     name: "Prof. (Dr.) Ramesh K Sen",
     title: "Co-Convener",
     subtitle: "Head, Orthopaedics | Max Hospital Mohali",
-    image : ramesh
+    image: ramesh,
   },
   {
     name: "Prof. (Dr.) Sanjay K Bhadada",
     title: "Co-Convener",
     subtitle: "Head, Endocrinology | PGIMER Chandigarh",
-    image: sanjay
+    image: sanjay,
   },
   {
     name: "Prof. Anupam Agrawal",
     title: "Committee Member",
     subtitle: "IIT Ropar",
-    image: anupam
+    image: anupam,
   },
-  { name: "Prof. Durba Pal", 
-    title: "Committee Member", 
+  {
+    name: "Prof. Durba Pal",
+    title: "Committee Member",
     subtitle: "IIT Ropar",
-    image: durba
-
+    image: durba,
   },
   {
     name: "Prof. Bodhisatwa Das",
     title: "Committee Member",
     subtitle: "IIT Ropar",
-    image: bodhisatwa
+    image: bodhisatwa,
   },
   {
     name: "Prof. Srivatsava Naidu",
     title: "Committee Member",
     subtitle: "IIT Ropar",
-    image: srivatsava
+    image: srivatsava,
   },
   {
     name: "Prof. Suryasnata Tripathy",
     title: "Committee Member",
     subtitle: "IIT Ropar",
-    image: suryasnata
+    image: suryasnata,
   },
 ];
 

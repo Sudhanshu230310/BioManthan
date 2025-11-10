@@ -1,7 +1,7 @@
 import { EventGrid } from "./collageImagesHome";
 import { Hero } from "./heroHome";
-
 import HomeSpeakers from "./homePageSpeakers";
+import SponsorsPage from "./homeSponsorship";
 import ImportantUp from "./importantHome";
 import Updates from "./updates";
 
@@ -48,6 +48,9 @@ export default function HomePage() {
         </div>
         <div className="py-10">
           <ImportantUp />
+        </div>
+        <div>
+          <SponsorsPage />
         </div>
       </div>
     </>
