@@ -1,5 +1,5 @@
 import { EventGrid } from "./collageImagesHome";
-import { Hero } from "./heroHome";
+import  Hero  from "./heroHome";
 import HomeSpeakers from "./homePageSpeakers";
 import SponsorsPage from "./homeSponsorship";
 import ImportantUp from "./importantHome";

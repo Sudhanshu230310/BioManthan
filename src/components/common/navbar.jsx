@@ -9,24 +9,24 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-slate-400">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-18">
           {/* Logo */}
           <div className="">
             <img width={180}  src={biomanthan} alt="" />
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center text-black text-md gap-8">
             <a
               href="/"
-              className="text-slate-700 hover:text-red-600 transition-all hover:scale-105 "
+              className="hover:text-red-600 transition-all hover:scale-105 "
             >
               Home
             </a>
 
             {/* Dropdown Menu */}
             <Menu as="div" className="relative inline-block text-left">
-              <MenuButton className="inline-flex items-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 ">
+              <MenuButton className="inline-flex items-center gap-x-1.5 rounded-md bg-transparent px-3 py-2  hover:text-red-600 transition-all hover:scale-105 ">
                 About
                 <ChevronDown className="h-4 w-4" aria-hidden="true" />
               </MenuButton>
@@ -41,7 +41,7 @@ export function Navbar() {
                   <MenuItem>
                     <a
                       href="/iitrpr"
-                      className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                      className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                     >
                       IIT Ropar
                     </a>
@@ -49,7 +49,7 @@ export function Navbar() {
                   <MenuItem>
                     <a
                       href="/me&bme"
-                      className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                      className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                     >
                       ME & BME
                     </a>
@@ -57,7 +57,7 @@ export function Navbar() {
                   <MenuItem>
                     <a
                       href="/sbaoi"
-                      className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                      className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                     >
                       SBAOI
                     </a>
@@ -65,7 +65,7 @@ export function Navbar() {
                   <MenuItem>
                   <a
                     href="/stermi"
-                    className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                    className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     STERMI
                   </a>
@@ -76,38 +76,38 @@ export function Navbar() {
 
             <a
               href="/abstract"
-              className="text-slate-700 hover:text-red-600 transition-all hover:scale-105 "
+              className=" hover:text-red-600 transition-all hover:scale-105 "
             >
               Abstract
             </a>
             <a
               href="/speakers"
-              className="text-slate-700 hover:text-red-600 transition-all hover:scale-105 "
+              className=" hover:text-red-600 transition-all hover:scale-105 "
             >
               Speakers
             </a>
             <a
               href="/sponsorship"
-              className="text-slate-700 hover:text-red-600 transition-all hover:scale-105 "
+              className=" hover:text-red-600 transition-all hover:scale-105 "
             >
               Sponsorship
             </a>
             <a
               href="/geo"
-              className="text-slate-700 hover:text-red-600 transition-all hover:scale-105 "
+              className=" hover:text-red-600 transition-all hover:scale-105 "
             >
               Geographical Views
             </a>
             <a
               href="/committee"
-              className="text-slate-700 hover:text-red-600 transition-all hover:scale-105 "
+              className=" hover:text-red-600 transition-all hover:scale-105 "
             >
               Committee
             </a>
 
             {/* Dropdown Menu */}
             <Menu as="div" className="relative inline-block text-left">
-              <MenuButton className="inline-flex items-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 ">
+              <MenuButton className="inline-flex items-center gap-x-1.5 rounded-md bg-transparent px-3 py-2  hover:text-red-600 transition-all hover:scale-105 ">
                 More
                 <ChevronDown className="h-4 w-4" aria-hidden="true" />
               </MenuButton>
@@ -122,7 +122,7 @@ export function Navbar() {
                   <MenuItem>
                     <a
                       href="/calendar"
-                      className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                      className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                     >
                       Schedule
                     </a>
@@ -130,7 +130,7 @@ export function Navbar() {
                   <MenuItem>
                     <a
                       href="/accommodation"
-                      className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                      className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                     >
                       Accommodation & Travel
                     </a>
@@ -138,7 +138,7 @@ export function Navbar() {
                   <MenuItem>
                     <a
                       href="/contact"
-                      className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                      className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                     >
                       Contact us
                     </a>
@@ -157,7 +157,7 @@ export function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-slate-700"
+            className="lg:hidden "
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -192,13 +192,13 @@ export function Navbar() {
         <div className="flex flex-col space-y-2 px-4">
           <a
             href={`/`}
-            className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
+            className="block px-4 py-2  hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
             onClick={() => setIsOpen(false)}
           >
             Home
           </a>
           <Menu as="div" className="relative inline-block text-left">
-            <MenuButton className="inline-flex items-center gap-x-1.5 rounded-md bg-transparent px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-110 ">
+            <MenuButton className="inline-flex items-center gap-x-1.5 rounded-md bg-transparent px-4 py-2  hover:text-red-600 transition-all hover:scale-110 ">
               About
               <ChevronDown className="h-4 w-4" aria-hidden="true" />
             </MenuButton>
@@ -213,7 +213,7 @@ export function Navbar() {
                 <MenuItem>
                   <a
                     href="/iitrpr"
-                    className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                    className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     IIT Ropar
                   </a>
@@ -221,7 +221,7 @@ export function Navbar() {
                 <MenuItem>
                   <a
                     href="/me&bme"
-                    className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                    className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     ME & BME
                   </a>
@@ -229,7 +229,7 @@ export function Navbar() {
                 <MenuItem>
                   <a
                     href="/sbaoi"
-                    className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                    className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     SBAOI
                   </a>
@@ -237,7 +237,7 @@ export function Navbar() {
                   <MenuItem>
                   <a
                     href="/stermi"
-                    className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                    className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     STERMI
                   </a>
@@ -247,42 +247,42 @@ export function Navbar() {
           </Menu>
           <a
             href="abstract"
-            className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
+            className="block px-4 py-2  hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
             onClick={() => setIsOpen(false)}
           >
             Abstract
           </a>
           <a
             href={`/speakers`}
-            className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
+            className="block px-4 py-2  hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
             onClick={() => setIsOpen(false)}
           >
             Speakers
           </a>
           <a
             href={`/sponsorship`}
-            className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
+            className="block px-4 py-2  hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
             onClick={() => setIsOpen(false)}
           >
             Sponsorship
           </a>
           <a
             href={`/geo`}
-            className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
+            className="block px-4 py-2  hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
             onClick={() => setIsOpen(false)}
           >
             Geographical Views
           </a>
           <a
             href={`/committee`}
-            className="block px-4 py-2 text-slate-700 hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
+            className="block px-4 py-2  hover:bg-slate-100 transition-all duration-100 hover:text-red-600 hover:scale-105 rounded-2xl"
             onClick={() => setIsOpen(false)}
           >
             Committee
           </a>
           {/* Dropdown Menu */}
           <Menu as="div" className="relative inline-block text-left">
-            <MenuButton className="inline-flex items-center gap-x-1.5 rounded-md bg-transparent px-5 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-110 ">
+            <MenuButton className="inline-flex items-center gap-x-1.5 rounded-md bg-transparent px-5 py-2  hover:text-red-600 transition-all hover:scale-110 ">
               More
               <ChevronDown className="h-4 w-4" aria-hidden="true" />
             </MenuButton>
@@ -297,7 +297,7 @@ export function Navbar() {
                 <MenuItem>
                   <a
                     href="/"
-                    className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                    className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     Schedule
                   </a>
@@ -305,7 +305,7 @@ export function Navbar() {
                 <MenuItem>
                   <a
                     href="/accommodation"
-                    className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                    className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     Accommodation & Travel
                   </a>
@@ -313,7 +313,7 @@ export function Navbar() {
                 <MenuItem>
                   <a
                     href="/contact"
-                    className="block px-4 py-2 text-slate-700 hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                    className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     Contact us
                   </a>

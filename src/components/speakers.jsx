@@ -313,7 +313,7 @@ const speakers = {
       category: "International",
     },
     {
-      name: "Prof. Mrinal Kanti Musib",
+      name: "Dr. Mrinal Kanti Musib",
       title: "Professor",
       affiliation: "NUS, Singapore",
       image: mrinal,
@@ -1107,11 +1107,18 @@ export default function Speakers() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-800 selection:bg-indigo-200/60">
 
-      <header className="text-center pt-20 pb-16">
+      <header className="text-center pt-20 pb-10">
           <span className="text-4xl lg:text-5xl font-serif">
             <span className="text-red-600">Spe</span>akers
           </span>
       </header>
+      <p
+          className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up pb-10"
+          style={{ animationDelay: "0.2s" }}
+        >
+          Meet the distinguished leaders and experts guiding Bio-MANTHAN, a
+          premier biomedicine research symposium at IIT Ropar
+        </p>
 
       <style jsx>{`
         @keyframes fadeInUp {

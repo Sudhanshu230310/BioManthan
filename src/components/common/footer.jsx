@@ -162,7 +162,7 @@ export function Footer() {
                 <div className="absolute bottom-0 left-0 w-0 h-1  rounded-full transition-all duration-500 group-hover:w-full"></div>
               </h5>
               <div className="space-y-2 text-sm">
-                <div className="flex items-center gap-4 group hover:bg-white/60 p-3 rounded-xl transition-all duration-300 hover:shadow-md">
+                {/* <div className="flex items-center gap-4 group hover:bg-white/60 p-3 rounded-xl transition-all duration-300 hover:shadow-md">
                   <div className="p-2 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg">
                     <Phone className="h-4 w-4 text-white" />
                   </div>
@@ -172,7 +172,7 @@ export function Footer() {
                   >
                     (555) 123-4567
                   </a>
-                </div>
+                </div> */}
                 <div className="flex items-center gap-4 group hover:bg-white/60 p-3 rounded-xl transition-all duration-300 hover:shadow-md">
                   <div className="p-2 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg">
                     <Mail className="h-4 w-4 text-white" />

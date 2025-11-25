@@ -104,7 +104,7 @@ function CommitteeHeader() {
 }
 
 const patrons = [
-  { name: "Prof. Rajeev Ahuja", title: "Director, IIT Ropar", image: rajeev },
+  // { name: "Prof. Rajeev Ahuja", title: "Director, IIT Ropar", image: rajeev },
   { name: "Prof. Chandra P Sharma", title: "Founder, SBAOI", image: chandra },
   {
     name: "Prof. Ashok Kumar",
@@ -133,10 +133,10 @@ function PatronsSection() {
 
 
         <div
-          className={`group relative rounded-xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer min-h-96 ${"bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-lg"
+          className={`group relative rounded-xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer min-h-96 ${"bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-lg border mb-10"
           }`}
         >
-          <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-accent/0 via-accent/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-accent/0 via-accent/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 " />
 
           <div className="relative z-10">
             <div className="h-96 flex justify-center">
@@ -171,7 +171,7 @@ function PatronsSection() {
 
 
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {patrons.map((patron, idx) => (
             <div
               key={idx}
@@ -193,13 +193,13 @@ function PatronsSection() {
 }
 
 const organizingCommittee = [
-  {
-    name: "Prof. Navin Kumar",
-    title: "Convener",
-    subtitle: "IIT Ropar",
-    highlight: true,
-    image: naveen,
-  },
+  // {
+  //   name: "Prof. Navin Kumar",
+  //   title: "Convener",
+  //   subtitle: "IIT Ropar",
+  //   highlight: true,
+  //   image: naveen,
+  // },
   {
     name: "Prof. (Dr.) Vijay G Goni",
     title: "Co-Convener",
@@ -220,31 +220,31 @@ const organizingCommittee = [
   },
   {
     name: "Prof. Anupam Agrawal",
-    title: "Committee Member",
+    title: "Co-Convener",
     subtitle: "IIT Ropar",
     image: anupam,
   },
   {
     name: "Prof. Durba Pal",
-    title: "Committee Member",
+    title: "Co-Convener",
     subtitle: "IIT Ropar",
     image: durba,
   },
   {
     name: "Prof. Bodhisatwa Das",
-    title: "Committee Member",
+    title: "Co-Convener",
     subtitle: "IIT Ropar",
     image: bodhisatwa,
   },
   {
     name: "Prof. Srivatsava Naidu",
-    title: "Committee Member",
+    title: "Co-Convener",
     subtitle: "IIT Ropar",
     image: srivatsava,
   },
   {
     name: "Prof. Suryasnata Tripathy",
-    title: "Committee Member",
+    title: "Co-Convener",
     subtitle: "IIT Ropar",
     image: suryasnata,
   },
@@ -259,7 +259,47 @@ function OrganizingCommitteeSection() {
             <span className="text-red-600">Org</span>anizing Committee
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full" />
+        
+
         </div>
+        <div
+          className={`group relative rounded-xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer min-h-96 ${"bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-lg border mb-10"
+          }`}
+        >
+          <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-accent/0 via-accent/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 " />
+
+          <div className="relative z-10">
+            <div className="h-96 flex justify-center">
+              <img
+                className="rounded-full w-72 h-72 mb-4 object-contain overflow-hidden"
+                src={naveen}
+                alt=""
+              />
+            </div>
+
+            <h3 className="text-lg font-semibold leading-tight mb-1">Prof. Navin Kumar</h3>
+
+            <p
+              className={`text-sm font-medium mb-2 ${
+                "text-primary-foreground/90"
+              }`}
+            >
+              Convener, IIT Ropar
+            </p>
+          </div>
+
+          {/* <div className="absolute inset-0 rounded-xl pointer-events-none group-hover:animate-pulse">
+            <div
+              className={`absolute inset-0 rounded-xl ${
+                highlight
+                  ? "bg-gradient-to-r from-accent/20 to-transparent"
+                  : "bg-gradient-to-r from-primary/10 to-transparent"
+              } opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+            />
+          </div> */}
+        </div>
+
+        
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
           {organizingCommittee.map((member, idx) => (
