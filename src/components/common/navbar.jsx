@@ -124,6 +124,14 @@ export function Navbar() {
                       href="/calendar"
                       className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                     >
+                      Calendar
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="/Schedule"
+                      className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                    >
                       Schedule
                     </a>
                   </MenuItem>
@@ -133,6 +141,14 @@ export function Navbar() {
                       className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                     >
                       Accommodation & Travel
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="/howtoreach"
+                      className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
+                    >
+                      How To Reach
                     </a>
                   </MenuItem>
                   <MenuItem>
@@ -296,7 +312,7 @@ export function Navbar() {
               <div className="py-1">
                 <MenuItem>
                   <a
-                    href="/"
+                    href="/Schedule"
                     className="block px-4 py-2  hover:text-red-600 transition-all hover:scale-105 rounded-md"
                   >
                     Schedule

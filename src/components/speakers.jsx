@@ -16,6 +16,7 @@ import prashant from "../plenaryspeakersImages/Prashant.png"
 import gilson from "../plenaryspeakersImages/Gilson.png"
 import savyasachi from "../plenaryspeakersImages/Savyasachi.png"
 import vinoy from "../plenaryspeakersImages/Vinoy.png"
+import Daniel from "../plenaryspeakersImages/Daniel.png"
 
 import anamika from "../internationalspeakersImages/Anamika.png"
 import binata from "../internationalspeakersImages/Binata.png"
@@ -25,6 +26,9 @@ import manishekhar from "../internationalspeakersImages/manishekhar.png"
 import mrinal from "../internationalspeakersImages/Mrinal.png"
 import pranav from "../internationalspeakersImages/Pranav.png"
 import sriya from "../internationalspeakersImages/Sriya.png"
+import Sumrita from "../internationalspeakersImages/Sumrita.png"
+import Deepak2 from "../internationalspeakersImages/Deepak.png"
+import Syed from "../internationalspeakersImages/Syed.png"
 
 
 import abhijit from "../nationalspeakersImages/Abhijit.png"
@@ -259,7 +263,13 @@ const speakers = {
       image: vinoy,
       category: "Keynote",
     },
-
+    {
+      name: "A/Prof. Daniel E Heath",
+      title: " Associate Professor",
+      affiliation: "The University of Melbourne, Australia",
+      image: Daniel,
+      category: "Keynote",
+    },
   ],
 
   international: [
@@ -317,6 +327,27 @@ const speakers = {
       title: "Professor",
       affiliation: "NUS, Singapore",
       image: mrinal,
+      category: "International",
+    },
+    {
+      name: "Dr. Sumrita Bhat",
+      title: "CEO & Founder at Conlis ",
+      affiliation: "Global Inc., Canada",
+      image: Sumrita,
+      category: "International",
+    },
+    {
+      name: "Dr. Deepak Raina",
+      title: "Lund University Sweden",
+      affiliation: "",
+      image: Deepak2,
+      category: "International",
+    },
+    {
+      name: "Dr. Syed Asif S A",
+      title: "MD, Industron Technical Services",
+      affiliation: " Pvt. Ltd, USA & India ",
+      image: Syed,
       category: "International",
     },
   ],

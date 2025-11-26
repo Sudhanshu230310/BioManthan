@@ -1,24 +1,34 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 import { useInView } from "react-intersection-observer"
-
+import icmr from "../../homeSponsorsImage/icmr.png"
+import bioTech from "../../homeSponsorsImage/Biotechnology.png"
+import anusandhan from "../../homeSponsorsImage/anusandhan.png"
+import alfatek from "../../homeSponsorsImage/alfatek.png"
+import industron from "../../homeSponsorsImage/industron.png"
+import sprank from "../../homeSponsorsImage/spranktronics.png"
+import pyro from "../../homeSponsorsImage/pyro.png"
+import acs from "../../homeSponsorsImage/acs.png"
+import awadh from "../../homeSponsorsImage/awadh.png"
+import royal from '../../homeSponsorsImage/royal.png'
+import scanco from "../../homeSponsorsImage/scanco.png"
 const primarySponsors = [
   {
     id: "icmr",
     name: "Indian Council of Medical Research",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: icmr,
     description: "Serving the nation since 1911",
   },
   {
     id: "dbt",
     name: "Department of Biotechnology",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: bioTech,
     description: "Government of India",
   },
   {
     id: "anrf",
     name: "Anusandhan National Research Foundation",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: anusandhan,
     description: "Research & Innovation",
   },
 ]
@@ -27,13 +37,13 @@ export const goldSponsors = [
   {
     id: "industron",
     name: "INDUSTRON",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: industron,
     description: "Industrial Solutions Partner",
   },
   {
     id: "alfatek",
     name: "ALFATEK",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: alfatek,
     description: "Technology Excellence",
   },
 ]
@@ -42,37 +52,37 @@ const silverSponsors = [
   {
     id: "scanco",
     name: "SCANCO MEDICAL",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: scanco,
     description: "Medical Technology",
   },
   {
     id: "spranktronics",
     name: "SPRANKTRONICS",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: sprank,
     description: "Electronics & Automation",
   },
   {
     id: "pyro",
     name: "PYRO DYNAMICS",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: pyro,
     description: "Innovation Partners",
   },
   {
     id: "acs",
     name: "ACS Publications",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: acs,
     description: "Scientific Publishing",
   },
   {
     id: "awadh",
     name: "AWaDH IIT Ropar-TIF",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: awadh,
     description: "Academic Excellence",
   },
   {
     id: "rsc",
     name: "Royal Society of Chemistry",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0v0582Y99VdAFl5xpsKRlG9mZrCkv.png",
+    logo: royal,
     description: "Chemistry & Science",
   },
 ]
@@ -317,12 +327,12 @@ export default function SponsorsPage() {
       />
 
       {/* Silver Sponsors */}
-      {/* <SponsorTier
-        title="Silver Sponsors"
+      <SponsorTier
+        title="Sponsors"
         sponsors={silverSponsors}
         tier="silver"
         layout="grid grid-cols-1 md:grid-cols-3 gap-6"
-      /> */}
+      />
     </div>
   )
 }

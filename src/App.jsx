@@ -15,6 +15,8 @@ import Contact from "./components/more/contact";
 import Accommodation from "./components/more/Accommodation";
 import Geographicalview from "./components/geographical";
 import Speakers from "./components/speakers";
+import Schedule from "./components/more/Schedule";
+import HowToReach from "./components/more/howToreach";
 
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
             <Route path="/accommodation" element={<Accommodation/>}/>
             <Route path="/geo" element={<Geographicalview/>}/>
             <Route path="/speakers" element={<Speakers/>}/>
+            <Route path="/Schedule" element={<Schedule/>}/>
+            <Route path="/howtoreach" element={<HowToReach/>}/>
           </Routes>
         </BrowserRouter>
         <Footer />

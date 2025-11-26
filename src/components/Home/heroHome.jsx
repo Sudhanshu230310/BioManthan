@@ -129,10 +129,10 @@ export default function Hero() {
       />
 
       {/* Grid pattern overlay */}
-      <div className="absolute bg-black/80 inset-0  bg-[length:50px_50px] opacity-70"></div>
+      <div className="absolute bg-black/60 inset-0  bg-[length:50px_50px] opacity-70"></div>
 
       {/* Main Content */}
-      <div className="relative z-10 px-6 lg:px-20 py-20 max-w-7xl mx-auto w-full">
+      <div className="relative z-10 px-6 lg:px-20 py-20 mx-auto w-full">
         {/* Badge */}
         <div className="mb-8 inline-flex items-center gap-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-4 py-2">
           <Zap size={16} className="text-red-600" />
