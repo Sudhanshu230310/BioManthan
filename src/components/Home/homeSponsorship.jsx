@@ -134,7 +134,7 @@ function SponsorCard({ sponsor, tier }) {
           className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-xl -z-10 blur-lg"
         />
 
-        <div className="h-20 md:h-24 flex items-center justify-center mb-4">
+        <div className="w-full md:h-28 flex items-center justify-center mb-4">
           <motion.img
             src={sponsor.logo}
             alt={sponsor.name}
