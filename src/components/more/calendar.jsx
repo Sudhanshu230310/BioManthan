@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from "react"
 import Calendar from "react-calendar"
 import { Clock, MapPin, ChevronLeft, ChevronRight } from "lucide-react"
@@ -33,83 +32,205 @@ const categoryColors = {
     border: "#FECACA",
     badge: "#FEE2E2",
   },
+  conference: {
+    bg: "rgba(249, 115, 22, 0.05)",
+    text: "#92400E",
+    dot: "#F97316",
+    border: "#FED7AA",
+    badge: "#FFEDD5",
+  },
 }
 
 const HARDCODED_EVENTS = [
+  // December 4, 2025 - Day 1
   {
-    id: "1",
-    title: "Team Standup",
-    date: new Date(2025, 9, 30),
+    id: "conf-1",
+    title: "Registration & Wellness Activity",
+    date: new Date(2025, 11, 4),
+    time: "06:45",
+    category: "conference",
+    description: "Yoga Practice & Motivational Address",
+    location: "Auditorium Foyer Area",
+  },
+  {
+    id: "conf-2",
+    title: "Inaugural Ceremony",
+    date: new Date(2025, 11, 4),
+    time: "13:45",
+    category: "meeting",
+    description: "Opening ceremony with Chief Guest Prof. Vinod K. Paul",
+    location: "Auditorium",
+  },
+  {
+    id: "conf-3",
+    title: "Plenary Sessions - Keynote Lectures",
+    date: new Date(2025, 11, 4),
+    time: "16:20",
+    category: "conference",
+    description: "Distinguished speakers presenting on biomaterials and bioengineering",
+    location: "Auditorium",
+  },
+  {
+    id: "conf-4",
+    title: "Cultural Events & Dinner",
+    date: new Date(2025, 11, 4),
+    time: "18:20",
+    category: "conference",
+    description: "Sadho Band Live Performance followed by dinner",
+    location: "Auditorium & Rose Garden",
+  },
+
+  // December 5, 2025 - Day 2
+  {
+    id: "conf-5",
+    title: "Wellness Activity - Yoga",
+    date: new Date(2025, 11, 5),
+    time: "06:45",
+    category: "conference",
+    description: "Yoga Practice & Motivational Address",
+    location: "Auditorium Foyer Area",
+  },
+  {
+    id: "conf-6",
+    title: "Parallel Sessions I-IV",
+    date: new Date(2025, 11, 5),
+    time: "11:00",
+    category: "conference",
+    description: "Keynote speakers on Biomaterials, Cell Biology, Implants, and Pharmaceuticals",
+    location: "LHC-M3, LHC-M4, LHC-M5, LHC-M6",
+  },
+  {
+    id: "conf-7",
+    title: "Plenary Sessions",
+    date: new Date(2025, 11, 5),
+    time: "14:00",
+    category: "meeting",
+    description: "Distinguished speakers presenting research highlights",
+    location: "Senate Hall",
+  },
+  {
+    id: "conf-8",
+    title: "Panel Discussion & Cultural Events",
+    date: new Date(2025, 11, 5),
+    time: "16:30",
+    category: "conference",
+    description: "Industry delegates talk and cultural performances",
+    location: "Senate Hall & Auditorium",
+  },
+  {
+    id: "conf-9",
+    title: "Gala Dinner",
+    date: new Date(2025, 11, 5),
+    time: "20:00",
+    category: "conference",
+    description: "Shankar School of Music Performance (Sitar & Tabla Jugalbandi)",
+    location: "Rose Garden",
+  },
+
+  // December 6, 2025 - Day 3
+  {
+    id: "conf-10",
+    title: "Wellness Activity - Yoga",
+    date: new Date(2025, 11, 6),
+    time: "06:45",
+    category: "conference",
+    description: "Yoga Practice & Motivational Address",
+    location: "Auditorium Foyer Area",
+  },
+  {
+    id: "conf-11",
+    title: "Plenary Sessions - Morning",
+    date: new Date(2025, 11, 6),
     time: "09:00",
     category: "meeting",
-    description: "Daily team sync-up meeting",
-    location: "Conference Room A",
+    description: "Prof. Gilson Khang, Prof. Abhay Pandit, Prof. Amit Bandyopadhyay presenting",
+    location: "Senate Hall",
   },
   {
-    id: "2",
-    title: "Project Deadline",
-    date: new Date(2025, 9, 30),
-    time: "17:00",
-    category: "deadline",
-    description: "Submit final project deliverables",
-    location: "Email submission",
-  },
-  {
-    id: "3",
-    title: "Gym Session",
-    date: new Date(2025, 10, 1),
-    time: "18:00",
-    category: "personal",
-    description: "Evening workout routine",
-    location: "Fitness Center",
-  },
-  {
-    id: "4",
-    title: "Client Presentation",
-    date: new Date(2025, 10, 3),
-    time: "14:00",
-    category: "work",
-    description: "Q4 results and strategy presentation",
-    location: "Virtual - Zoom",
-  },
-  {
-    id: "5",
-    title: "Birthday Party",
-    date: new Date(2025, 10, 5),
-    time: "19:00",
-    category: "personal",
-    description: "Celebrate with friends and family",
-    location: "Downtown Restaurant",
-  },
-  {
-    id: "6",
-    title: "Code Review",
-    date: new Date(2025, 10, 6),
+    id: "conf-12",
+    title: "Parallel Sessions - Keynote Speakers",
+    date: new Date(2025, 11, 6),
     time: "10:30",
-    category: "work",
-    description: "Review pull requests from team members",
-    location: "GitHub",
+    category: "conference",
+    description: "Four theme-based parallel sessions with keynote presentations",
+    location: "LHC-M3, LHC-M4, LHC-M5, LHC-M6",
   },
   {
-    id: "7",
-    title: "Doctor Appointment",
-    date: new Date(2025, 10, 7),
-    time: "15:00",
-    category: "personal",
-    description: "Annual checkup",
-    location: "Medical Center",
+    id: "conf-13",
+    title: "Afternoon Plenary & Sessions",
+    date: new Date(2025, 11, 6),
+    time: "14:00",
+    category: "meeting",
+    description: "Plenary sessions followed by parallel sessions on wellness and tissue engineering",
+    location: "Senate Hall & LHC Complex",
+  },
+  {
+    id: "conf-14",
+    title: "Panel Discussion & Cultural Events",
+    date: new Date(2025, 11, 6),
+    time: "17:30",
+    category: "conference",
+    description: "Industry delegate talks and cultural performances",
+    location: "Senate Hall & Auditorium",
+  },
+  {
+    id: "conf-15",
+    title: "Dinner",
+    date: new Date(2025, 11, 6),
+    time: "20:00",
+    category: "conference",
+    description: "Conference dinner",
+    location: "Rose Garden",
+  },
+
+  // December 7, 2025 - Day 4
+  {
+    id: "conf-16",
+    title: "Wellness Activity - Yoga",
+    date: new Date(2025, 11, 7),
+    time: "06:45",
+    category: "conference",
+    description: "Yoga Practice & Motivational Address",
+    location: "Auditorium Foyer Area",
+  },
+  {
+    id: "conf-17",
+    title: "Final Plenary Sessions",
+    date: new Date(2025, 11, 7),
+    time: "09:00",
+    category: "meeting",
+    description: "Dr. Prashant N. Kumta, Prof. Roger Jagdish Narayan, Prof. Ashutosh Khandha",
+    location: "Senate Hall",
+  },
+  {
+    id: "conf-18",
+    title: "Parallel Sessions - Final Day",
+    date: new Date(2025, 11, 7),
+    time: "10:20",
+    category: "conference",
+    description: "Last set of keynote presentations and invited lectures",
+    location: "LHC-M3, LHC-M4, LHC-M5, LHC-M6",
+  },
+  {
+    id: "conf-19",
+    title: "Valedictory Session",
+    date: new Date(2025, 11, 7),
+    time: "14:00",
+    category: "meeting",
+    description: "Thanksgiving, Awards Distribution & Ceremony",
+    location: "Auditorium",
   },
 ]
 
 export function EventCalendar() {
-  const [selectedDate, setSelectedDate] = useState(new Date())
+  const [selectedDate, setSelectedDate] = useState(new Date(2025, 11, 4))
   const [events] = useState(HARDCODED_EVENTS)
 
   const selectedDateEvents = events.filter(
     (event) =>
       event.date.getDate() === selectedDate.getDate() &&
       event.date.getMonth() === selectedDate.getMonth() &&
-      event.date.getFullYear() === selectedDate.getFullYear()
+      event.date.getFullYear() === selectedDate.getFullYear(),
   )
 
   const getEventsForDate = (date) => {
@@ -117,14 +238,13 @@ export function EventCalendar() {
       (event) =>
         event.date.getDate() === date.getDate() &&
         event.date.getMonth() === date.getMonth() &&
-        event.date.getFullYear() === date.getFullYear()
+        event.date.getFullYear() === date.getFullYear(),
     )
   }
 
   const tileContent = ({ date }) => {
     const dateEvents = getEventsForDate(date)
     if (dateEvents.length === 0) return null
-
     return (
       <div style={{ display: "flex", gap: "4px", justifyContent: "center", marginTop: "8px", flexWrap: "wrap" }}>
         {dateEvents.slice(0, 3).map((event, idx) => (
@@ -147,9 +267,15 @@ export function EventCalendar() {
   }
 
   return (
-    <div className="bg-gray-100" style={{ display: "flex", flexDirection: "column", gap: "48px", padding: "48px 100px" }}>
-      <div className="text-5xl flex justify-center font-serif"><span className="text-red-600">S</span>chedule</div>
-      <div 
+    <div
+      className="bg-gray-100"
+      style={{ display: "flex", flexDirection: "column", gap: "48px", padding: "48px 100px" }}
+    >
+      <div className="text-5xl flex justify-center font-serif">
+        <span className="text-orange-600">Bio</span>-<span className="text-black">मंथन</span>{" "}
+        <span className="text-black">2025</span>
+      </div>
+      <div
         className="bg-gradient-to-br from-white to-blue-300"
         style={{
           padding: "100px 140px",
@@ -275,9 +401,7 @@ export function EventCalendar() {
         />
       </div>
 
-        {/* Checked */}
       <div
-        
         style={{
           padding: "48px",
           boxShadow: "0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04)",
@@ -315,7 +439,6 @@ export function EventCalendar() {
             {selectedDate.toLocaleDateString("en-US", { weekday: "long" })}
           </p>
         </div>
-
         {selectedDateEvents.length === 0 ? (
           <div style={{ textAlign: "center", paddingTop: "64px", paddingBottom: "64px" }}>
             <div
