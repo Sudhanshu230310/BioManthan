@@ -4,14 +4,14 @@ import { useInView } from "react-intersection-observer"
 import icmr from "../../homeSponsorsImage/icmr.png"
 import bioTech from "../../homeSponsorsImage/Biotechnology.png"
 import anusandhan from "../../homeSponsorsImage/anusandhan.png"
-// import alfatek from "../../homeSponsorsImage/alfatek.png"
+import alfatek from "../../homeSponsorsImage/Alfatek.png"
 import industron from "../../homeSponsorsImage/industron.png"
 import sprank from "../../homeSponsorsImage/spranktronics.png"
 import pyro from "../../homeSponsorsImage/pyro.png"
 import acs from "../../homeSponsorsImage/acs.png"
 import awadh from "../../homeSponsorsImage/awadh.png"
 import royal from '../../homeSponsorsImage/royal.png'
-import scanco from "../../homeSponsorsImage/scanco.png"
+import scanco from "../../homeSponsorsImage/Scanco.png"
 const primarySponsors = [
   {
     id: "icmr",
