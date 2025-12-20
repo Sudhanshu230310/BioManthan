@@ -22,7 +22,7 @@ import anamika from "../internationalspeakersImages/Anamika.png"
 import binata from "../internationalspeakersImages/Binata.png"
 import deepankar from "../internationalspeakersImages/Deepankar.png"
 import finosh from "../internationalspeakersImages/Finosh.png"
-import manishekhar from "../internationalspeakersImages/manishekhar.png"
+// import manishekhar from "../internationalspeakersImages/manishekhar.png"
 import mrinal from "../internationalspeakersImages/Mrinal.png"
 import pranav from "../internationalspeakersImages/Pranav.png"
 import sriya from "../internationalspeakersImages/Sriya.png"
@@ -287,13 +287,13 @@ const speakers = {
       image: anamika,
       category: "International",
     },
-    {
-      name: "Prof. Manishkumar Kumar",
-      title: "Professor",
-      affiliation: "University of Pittsburgh, USA",
-      image: manishekhar,
-      category: "International",
-    },
+    // {
+    //   name: "Prof. Manishkumar Kumar",
+    //   title: "Professor",
+    //   affiliation: "University of Pittsburgh, USA",
+    //   image: manishekhar,
+    //   category: "International",
+    // },
     {
       name: "Prof. Pranav Soman",
       title: "Professor",
@@ -479,13 +479,13 @@ const speakers = {
       image: abhijit,
       category: "National",
     },
-    {
-      name: "Prof. Pravin Salunke",
-      title: "Professor, Neurosurgery",
-      affiliation: "PGIMER, Chandigarh",
-      image: pravin,
-      category: "National",
-    },
+    // {
+    //   name: "Prof. Pravin Salunke",
+    //   title: "Professor, Neurosurgery",
+    //   affiliation: "PGIMER, Chandigarh",
+    //   image: pravin,
+    //   category: "National",
+    // },
     {
       name: "Prof. Kumar Keshav",
       title: "Orthopaedic",
