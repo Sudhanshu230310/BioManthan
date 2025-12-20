@@ -5,7 +5,7 @@ import HomePage from "./components/Home/home";
 import { Navbar } from "./components/common/navbar";
 import MEBME from "./components/About/me&bme";
 import IITRPR from "./components/About/IITRopar";
-import Sbaoi from "./components/About/SBAOI";
+import Sbaoi from "./components/About/SbaOI";
 import Stermi from "./components/About/STERMI";
 import { EventCalendar } from "./components/more/calendar";
 import Abstract from "./components/Abstract";
