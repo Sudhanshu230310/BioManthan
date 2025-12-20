@@ -8,7 +8,7 @@ import IITRPR from "./components/About/iitRopar";
 import Sbaoi from "./components/About/sbaoi";
 import Stermi from "./components/About/stermi";
 import { EventCalendar } from "./components/more/calendar";
-import Abstract from "./components/Abstract";
+import Abstract from "./components/abstract";
 import Sponsorship from "./components/sponsorship";
 import Committee from "./components/committee";
 import Contact from "./components/more/contact";
