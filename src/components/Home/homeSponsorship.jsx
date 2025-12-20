@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer"
 import icmr from "../../homeSponsorsImage/icmr.png"
 import bioTech from "../../homeSponsorsImage/Biotechnology.png"
 import anusandhan from "../../homeSponsorsImage/anusandhan.png"
-import alfatek from "../../homeSponsorsImage/alfatek.png"
+// import alfatek from "../../homeSponsorsImage/alfatek.png"
 import industron from "../../homeSponsorsImage/industron.png"
 import sprank from "../../homeSponsorsImage/spranktronics.png"
 import pyro from "../../homeSponsorsImage/pyro.png"
@@ -40,12 +40,12 @@ export const goldSponsors = [
     logo: industron,
     description: "Industrial Solutions Partner",
   },
-  {
-    id: "alfatek",
-    name: "ALFATEK",
-    logo: alfatek,
-    description: "Technology Excellence",
-  },
+  // {
+  //   id: "alfatek",
+  //   name: "ALFATEK",
+  //   logo: alfatek,
+  //   description: "Technology Excellence",
+  // },
 ]
 
 const silverSponsors = [
