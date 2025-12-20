@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-import STERMI from "../../logos/STERMI.png"
+import STERMI from "../../logos/stermi.png"
 export default function Stermi() {
   return (
     <>
