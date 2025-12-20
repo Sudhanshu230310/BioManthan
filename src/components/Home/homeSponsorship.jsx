@@ -40,12 +40,12 @@ export const goldSponsors = [
     logo: industron,
     description: "Industrial Solutions Partner",
   },
-  // {
-  //   id: "alfatek",
-  //   name: "ALFATEK",
-  //   logo: alfatek,
-  //   description: "Technology Excellence",
-  // },
+  {
+    id: "alfatek",
+    name: "ALFATEK",
+    logo: alfatek,
+    description: "Technology Excellence",
+  },
 ]
 
 const silverSponsors = [
